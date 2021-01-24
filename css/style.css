@@ -1,0 +1,575 @@
+body{
+    padding-top: 9vh;
+    background: #f1f1f1 !important;
+    overflow-x: hidden;
+}
+
+
+/********************************************* satart nav *************/
+nav{
+    height: 10vh;
+    background: #222831;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 99999;
+    padding-top: 19px;
+}
+nav .logo a {
+    font-weight: bold;
+    font-size: 23px;
+    position: relative;
+    top:-5px;
+    text-decoration: none;
+}
+nav .logo a :first-of-type {
+   color:#fff;
+}
+nav .logo a :last-of-type {
+    color:#f80;
+ }
+
+.list{
+    text-align: right;
+ 
+}
+ 
+.list li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family:monospace;
+    text-transform: capitalize; 
+    text-decoration: none !important;
+}
+a:hover{
+    color:#888;
+}
+
+.bars{
+    position: absolute;
+    top: 8px;
+    right: 33px;
+    display: none;
+    font-size: 27px;
+}
+.bars i{
+    cursor:pointer;
+    color:#fff;
+}
+@media(max-width:767px){
+  .list{
+    text-align: center;
+    background: #343942;
+    position: fixed;
+    width:100%;
+    top:10vh;
+    left:0;
+    overflow: hidden;
+    display: none;
+    z-index: 9999;
+  }
+  .list li{
+    display: block;
+    margin:13px 0;
+ 
+  }
+  .list li:not(:last-of-type){
+    border-bottom: 1px solid #434c5a;
+    padding: 6px 0;
+  }
+  .list li a{
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  .list li a:hover{
+  color:#f50;
+  }
+  .bars{
+      display: block;
+  }
+}
+
+
+@media(min-width:768px){
+    .list{
+        display: block;
+    }
+}
+ 
+   
+.signup{
+    padding:7px;
+    background: #f50;
+    border-radius: 5px;
+}
+/********************************************* end nav *************/
+
+
+
+/********************************************* satart header *************/
+header{
+    overflow: hidden;
+    height: 90vh;
+    background-size: cover;
+    position: relative;
+}
+header .info{
+    position: absolute;
+    top:50%;
+    left:50%;
+    height: 120px;
+    width: 700px;
+    margin-left: -350px;
+    margin-top:-60px;
+    z-index: 9;
+ 
+}
+
+header .info p{
+    color:#fff;
+    margin-bottom: 0;
+}
+header .info h1{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    margin:5px;
+}
+header .info h1 span{
+    color:#f50;
+}
+header .info button{
+    padding:12px 10px;
+    color:#fff;
+    background:#f50;
+    outline: none;
+    border:none;
+    border-radius: 3px;
+    margin-top:10px;
+}
+header .overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgb(41 39 197 / 41%);
+}
+@media(max-width:767px) {
+    header .info{
+        position: relative;
+        margin-left: -320px;
+    }
+    header .info h1{
+        font-size: 35px;
+        padding: 0 10px;
+        width: 500px;
+    }
+   
+}
+@media(max-width:400px) {
+    header .info{
+        width: 350px;
+        left: 90%;
+    }
+    header .info h1{
+        font-size: 35px;
+        padding: 0 10px;
+        width: 350px;
+    }
+   
+}
+
+
+/********************************************* end header *************/
+
+
+/********************************************* start choose *************/
+.choose .title{
+    width:500px;
+    margin:50px auto;
+}
+.choose .title h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.choose .title h2 span{
+    color:#f50;
+}
+.choose .item{
+    display: flex;
+    margin-top:20px;
+}
+.choose .item .cont_img{
+    width:200px;
+    height: 120px;
+    position: relative;
+    top:10px;
+}
+.choose .item .cont_img img{
+    width:100%;
+    height: 100%;
+}
+.choose .item .info{
+    padding:15px;
+}
+.choose .item .info h3{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: bold ;
+}
+.choose .item .info p{
+    margin:0;
+}
+.choose .item .info a{
+    text-decoration: none;
+    color:#f50;
+}
+@media(max-width:767px) {
+    .choose .item{
+        display: block;
+        text-align: center;
+        background: #fff;
+    }
+    .choose .item .cont_img{
+        width:200px;
+        height: 120px;
+        margin: auto;
+    }
+    .choose .title{
+        width:350px;
+        margin:50px auto;
+    } 
+}
+@media(max-width:400px) {
+    .choose .item .cont_img{
+        width:90%;
+        height: 150px;
+        margin: auto;
+    }
+}
+/********************************************* end choose *************/
+
+
+
+/********************************************* satart dont *************/
+.dont{
+    background:url('../imgs/dont/cta-bg.jpg');
+    margin-top:100px;
+    padding:50px 0;
+    position: relative;
+}
+
+.dont .info  {
+    position: relative;
+    z-index: 999;
+}
+.dont .info  h1{
+    text-transform: capitalize;
+    color:#fff;
+}
+
+.dont .info  h1 span{
+    color:#f50;
+}
+
+.dont .info  p{
+    width:800px;
+    margin:10px auto;
+    color:#fff;
+}
+
+.dont .info  button{
+    padding:12px 10px;
+    color:#fff;
+    background:#f50;
+    outline: none;
+    border:none;
+    border-radius: 3px;
+    margin-top:10px;
+}
+.overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgb(41 39 197 / 41%);
+
+}
+@media(max-width:767px) {
+    .dont .info  h1{
+       font-size: 30px;
+    }
+    .dont .info  p{
+        width:350px;
+        margin:10px auto ;
+        color:#fff;
+        padding-right: 15px;
+        text-align: center;
+    }
+}
+/********************************************* end dont *************/
+
+
+/********************************************* satart our classes *************/
+.classes{
+    margin-top:100px;
+}
+.classes .title{
+    width:500px;
+    margin:50px auto;
+}
+.classes .title h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.classes .title h2 span{
+    color:#f50;
+}
+.classes .info .item{
+    background: #fff;
+    color:#f50;
+    padding:25px;
+    margin-top: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 5px #99999959;
+}
+.classes .info button{
+    padding:12px 10px;
+    color:#fff;
+    background:#f50;
+    outline: none;
+    border:none;
+    border-radius: 3px;
+    margin-top:10px;
+    width:100%;
+}
+
+.classes .cont_img{
+    height: 250px;
+    width:100%;
+    margin-top:30px;
+}
+.classes .cont_img img{
+    height: 100%;
+    width:100%;
+}
+
+.classes .img_info button{
+    padding:12px 10px;
+    color:#fff;
+    background:#f50;
+    outline: none;
+    border:none;
+    border-radius: 3px;
+    margin-top:10px;
+    
+}
+@media(max-width:767px) {
+    .classes .row .one{
+        order:2;
+    }
+    .classes .row .two{
+        order: 1;
+    }
+    .classes .title{
+        width:350px;
+        margin:50px auto;
+    }
+    .classes .title h2{
+        font-size: 30px;
+    }
+    .classes .title p{
+        font-size: 16px;
+        padding-right: 15px;
+    }
+}
+/********************************************* satart our classes *************/
+
+
+
+
+/********************************************* satart table *************/
+.table{
+    margin: 50px 0;
+    background:url('../imgs/classes/schedule-bg.jpg');
+    background-size: cover;
+    padding:50px;
+    position: relative;
+}
+.table .title{
+    width:500px;
+    margin:0 auto 50px auto;
+    position: relative;
+    z-index: 9999;
+    color:#fff;
+}
+.table .title h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.table .title h2 span{
+    color:#f50;
+}
+.table .overlay{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: rgb(41 39 197 / 41%);
+}
+.table  table{
+    border:1px solid #fff;
+    margin:auto;
+    position: relative;
+    z-index: 9999;
+}
+.table  table tr td{
+    padding:20px 35px;
+    border:1px solid #fff;
+    color:#fff;
+}
+@media(max-width:767px) {
+    .table{
+        padding:20px 5px;
+    }
+    .table .title{
+        width:350px;
+    }
+    .table  table tr td{
+        padding:5px 10px;
+    }
+}
+/********************************************* satart table *************/
+
+/********************************************* satart price *************/
+.price{
+    margin:150px 0 50px 0 ;
+}
+.price .title{
+    width:500px;
+    margin:0 auto 50px auto;
+    position: relative;
+    z-index: 9999;
+}
+.price .title h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.price .title h2 span{
+    color:#f50;
+}
+.card {
+    padding:20px;
+    background:#fff;
+    margin-top: 20px;
+}
+.card .cont_img{
+    width:100%;
+    height: 200px;
+}
+.card .cont_img img{
+    width:100%;
+    height:100%;
+}
+.card .card-body span{
+    color: #f50;
+}
+.card .social a {
+    padding: 0 5px
+}
+@media(max-width:767px) {
+    .price .title{
+        width:350px;
+    }
+}
+/********************************************* satart price *************/
+
+
+
+/********************************************* satart contact  us*************/
+footer .row .col{
+    padding:0;
+}
+footer .row .map{
+    height: 400px;
+    padding-left: 10px;
+}
+footer .form{
+    padding:40px;
+    background:url('../imgs/contact-bg.jpg');
+
+}
+footer .form form{
+    padding:25px 15px;
+    background:#fff;
+    border-radius: 5px;
+}
+footer .form form input{
+    padding:4px;
+}
+footer .form form .f_name,.L_name{
+    display: inline-block;
+    width:49%;
+}
+footer .form form .email{
+    display: block;
+    width:99%;
+    margin:20px 0;
+}
+footer .form form textarea{
+    display: block;
+    width:99%;
+    margin:20px 0;
+    height: 100px;
+}
+footer .form form button{
+    outline:none;
+    padding:8px 15px;
+    border:none;
+    background:#f50;
+    color:#fff;
+}
+
+.copy{
+    padding:25px;
+    background:#fff;
+}
+
+.copy span{
+    color:#f50;
+}
+@media(max-width:767px){
+    .colmap{
+        order:2
+    }
+    .colform{
+        order:1
+    }
+    footer .form{
+        padding:10px;
+        margin-bottom: 20px;
+    }
+    footer .form form{
+        padding: 15px;
+    }
+}
+/********************************************* satart contact  us *************/
+button:hover{
+    opacity: .7;
+}
+i:hover{
+   cursor: pointer;
+   color:#f50
+}
